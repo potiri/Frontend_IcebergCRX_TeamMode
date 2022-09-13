@@ -10,17 +10,26 @@ npm run serve
  ```
 ## Screenshots of the frontend:
 ### UI
-![image](https://user-images.githubusercontent.com/56884203/189838889-a610dd41-c69c-493d-b195-6ad0c452ed34.png)
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838889-a610dd41-c69c-493d-b195-6ad0c452ed34.png" width="500" />
+</p>
 
 ### Video Lesson
-![Cyberrange_Learning](![image](https://user-images.githubusercontent.com/56884203/189838047-942da41b-f044-4c4e-9db1-8cb916e664a6.png))
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838047-942da41b-f044-4c4e-9db1-8cb916e664a6.png width="500" />
+</p>
 
 ### Text Lesson
-![image](https://user-images.githubusercontent.com/56884203/189838245-0f36561a-9ae5-4630-bfca-a96162875607.png)
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838245-0f36561a-9ae5-4630-bfca-a96162875607.png" width="500" />
+</p>
 
 ### Cloze Task
-![image](https://user-images.githubusercontent.com/56884203/189838556-a421ee39-9a2f-47ef-83d1-52b71c16f27c.png)
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838556-a421ee39-9a2f-47ef-83d1-52b71c16f27c.png" width="500" />
+</p>
 
 ### Shell Task
-![image](https://user-images.githubusercontent.com/56884203/189838794-6580c141-614e-4f7d-8cb8-6bda0bca29db.png)
-
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838794-6580c141-614e-4f7d-8cb8-6bda0bca29db.png" width="500" />
+</p>
