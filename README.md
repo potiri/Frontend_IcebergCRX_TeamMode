@@ -1,22 +1,35 @@
 # frontendCyberrange
 
-This frontend is part of the [DigitalTwinSocCyberrange](https://github.com/DigitalTwinSocCyberrange) project. Documentation and installation instructions can be found [here](https://github.com/DigitalTwinSocCyberrange/DigitalTwinCyberrange).
+This frontend is part of Iceberg CRX. Documentation and installation instructions can be found [here](https://github.com/TARGETframework/Backend_IcebergCRX).
 
 The frontend is implemented with the javascript framwork [Vue.js](https://vuejs.org/). After setting up the frontend as described in the documentation of the main project, to run the frontend without the virtual environment and the SIEM system (e.g. for debugging) run:
 
 ```bash
+npm install
 npm run serve
  ```
 ## Screenshots of the frontend:
-### Learning material
-![Cyberrange_Learning](https://user-images.githubusercontent.com/56884203/112633883-3302c900-8e3a-11eb-9ed7-7d9406a4b715.png)
+### UI
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838889-a610dd41-c69c-493d-b195-6ad0c452ed34.png" width="500" />
+</p>
 
-### Blank Task
-![Cyberrange_Task_A](https://user-images.githubusercontent.com/56884203/112633784-15356400-8e3a-11eb-80d4-822119da9c16.png)
+### Video Lesson
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838047-942da41b-f044-4c4e-9db1-8cb916e664a6.png width="500" />
+</p>
 
-### Video Task
-![Cyberrange_Task_B](https://user-images.githubusercontent.com/56884203/112633782-15356400-8e3a-11eb-8257-ae703441701c.png)
+### Text Lesson
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838245-0f36561a-9ae5-4630-bfca-a96162875607.png" width="500" />
+</p>
 
-## Research and Citation
-Please consider citing our [DBSec'21](https://doi.org/10.1007/978-3-030-81242-3_17) publication when using the **DigitalTwinSocCyberrange** for your research.
+### Cloze Task
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838556-a421ee39-9a2f-47ef-83d1-52b71c16f27c.png" width="500" />
+</p>
 
+### Shell Task
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/56884203/189838794-6580c141-614e-4f7d-8cb8-6bda0bca29db.png" width="500" />
+</p>
