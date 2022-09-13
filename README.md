@@ -16,8 +16,9 @@ npm run serve
 
 ### Video Lesson
  <p align="center">
-  <img src="https://user-images.githubusercontent.com/56884203/189838047-942da41b-f044-4c4e-9db1-8cb916e664a6.png width="500" />
+  <img src="https://user-images.githubusercontent.com/56884203/189838047-942da41b-f044-4c4e-9db1-8cb916e664a6.png" width="500" />
 </p>
+
 
 ### Text Lesson
  <p align="center">
