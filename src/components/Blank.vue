@@ -22,19 +22,8 @@
                   <span v-html="this.blank.flagInstruction"></span>
                 </div>
               </div>
-              <br />
-              <input
-                class="input blank-input is-short is-json is-size-8"
-                :class="{ 'input-wrong': this.blank.wrongTry }"
-                v-model.trim="userInput"
-                :placeholder="this.blank.placeholder"
-              />
+
               <div class="buttons is-left mt-5">
-                <button class="button submit-button is-rounded" type="submit" value="Submit">
-                  Submit
-                  <span>&#10140;</span>
-                </button>
-                <br />
                 <button
                   class="button is-rounded is-warning has-tooltip-arrow has-tooltip-multiline has-tooltip-top"
                   v-if="!hintActivated && this.blank.hint != null"

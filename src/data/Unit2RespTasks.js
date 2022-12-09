@@ -114,7 +114,7 @@ Waiting for response ...
 <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-top" 
 data-tooltip="Don't worry, you recognize it when you see it ;)">
     <span class="has-text-link-dark has-text-weight-bold">
-        flag:
+        flag
     </span>
 </span>`,
             flagVariants: ["polar-bear", "polarbear"],
@@ -163,7 +163,7 @@ Recover the ARP entry by using the correct version of the command
 10.0.0.5   ether   00:00:00:00:00:05   C                     plc1-eth0
 10.0.0.2   ether   00:00:00:00:00:02   C                     plc1-eth0
 10.0.0.4   ether   00:00:00:00:00:04   C                     plc1-eth0
-10.0.0.3   ether   00:00:00:00:00:03   CM FLAG: polar-bear   plc1-eth0`                        
+10.0.0.3   ether   00:00:00:00:00:03   CM FLAG: polar-bear   plc1-eth0`
                     ],
                     arpRecovery: [
                         `arp -s 10.0.0.3 00:00:00:00:00:03`,
@@ -182,7 +182,7 @@ Recover the ARP entry by using the correct version of the command
 <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-top" 
 data-tooltip="Don't worry, you recognize it when you see it ;)">
     <span class="has-text-link-dark has-text-weight-bold">
-        flag:
+        flag
     </span>
 </span>`,
             flagVariants: ["snow-flake", "snowflake"],
@@ -245,11 +245,11 @@ Recover the ARP entry by using the correct version of the command
             level: 7,
             responseActionID: "Step 4",
             responseActionInstruction: `<span>&#62;</span><span>&#62;</span> Verify that the malicious activity has stopped. Monitor the SIEM for the events that <span class="has-text-weight-medium">replace</span> the WARNING logs of <span class="has-text-weight-medium">plc1</span>.`,
-            flagInstruction:  `Submit the 
+            flagInstruction: `Submit the 
 <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-top" 
 data-tooltip="Don't worry, you recognize it when you see it ;)">
     <span class="has-text-link-dark has-text-weight-bold">
-        flag:
+        flag
     </span>
 </span>`,
             flagVariants: ["aurora-polaris", "aurorapolaris"],

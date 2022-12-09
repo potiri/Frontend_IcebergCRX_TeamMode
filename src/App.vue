@@ -1,4 +1,4 @@
-<template >
+<template>
 <body>
   <div>
     <!-- layout prior exercise: prompts user to login -->
@@ -30,7 +30,7 @@
 
           <div class="buttons is-centered mt-5">
             <button
-              class="button submit-button is-rounded mt-5"
+              class="button submit-button is-large is-rounded mt-5"
               type="submit"
               value="Submit"
               @click="validateId()"
@@ -45,33 +45,32 @@
 
     <!-- layout post exercise: informs user about completion exercise -->
     <div v-if="gameCompleted" class="is-vhcentered has-text-centered">
-      <h1
-        class="is-json title mt-5"
-      >Congrats {{ String(this.userPseudonym) }}, you've completed the exercise. 🎊</h1>
-      <br />
-      <h2
-        class="is-json subtitle mb-2"
-      >Thanks to your efforts the impact of the MitM attack on the filling plant were minimal.</h2>
-      <br />
-      <h2 class="is-json subtitle mb-2">
-        You achieved
-        <strong>{{ this.points }} points 💪</strong>
+      <h1 class="is-json title mt-5">Congrats team {{ String(this.userPseudonym) }}!</h1>
+
+      <h2 class="subtitle mb-2">
+        You completed the exercise with
+        <strong>{{ this.points }} points</strong>. This was great teamwork! Thanks to your efforts the impact of the MitM attack on the filling plant were minimal.
       </h2>
+
       <br />
 
       <br />
-      <h2 class="subtitle is-6">
-        To complete the cyber range training please take part in our final quiz
+      <h2 class="subtitle is-10">
+        To complete the cyber range training please take part in our
+        <strong>final quiz</strong>
         and let one of the trainers know when you finished.
-        <br />Please use again your
-        <strong>{{naming}} ({{namingPlaceholder}})</strong> to register for the
+        Please use again your
+        {{naming}}
+        <strong
+          class="title is-json"
+        >({{namingPlaceholder}})</strong> to register for the
         quiz.
       </h2>
       <!--CHANGE back-->
 
       <div class="buttons is-centered pt-3">
         <button
-          class="button submit-button is-rounded"
+          class="button submit-button is-large is-rounded"
           type="submit"
           value="Submit"
           @click="
@@ -266,6 +265,7 @@
                     @submit-points="submitPoints"
                     @task-completed="markAsCompleted"
                     @ident-one-completed="this.startRespOne = true"
+                    @get-marker="getUserPoints"
                   ></flag-submission>
                 </div>
               </div>
@@ -287,7 +287,7 @@
                   - show/hide the content below the title and subtitle-->
                   <div class="buttons is-left mt-5">
                     <button
-                      class="button is-rounded submit-button"
+                      class="button is-rounded submit-button is-large"
                       @click="this.startPlaybookTwo = true; this.scrollToPlaybookTwo()"
                     >
                       <span>&#9655;</span> Start with Playbook 2
@@ -328,6 +328,7 @@
                     @submit-points="submitPoints"
                     @task-completed="markAsCompleted"
                     @ident-two-completed="this.startRespTwo = true"
+                    @get-marker="getUserPoints"
                   ></flag-submission>
                 </div>
               </div>
@@ -344,6 +345,7 @@
                     @submit-points="submitPoints"
                     @task-completed="markAsCompleted"
                     @game-finished="this.finishGame"
+                    @get-marker="getUserPoints"
                   ></flag-submission>
                 </div>
               </div>
@@ -459,8 +461,8 @@ export default {
       this.gameStarted = true;
     } else if (this.url_param != null) {
       this.userID = this.url_param;
-      var newUrl = this.removeURLParameter(location.href, "userID");
-      history.pushState({}, null, newUrl);
+      //var newUrl = this.removeURLParameter(location.href, "userID");
+      //history.pushState({}, null, newUrl);
       this.validateId();
     } else {
       console.log("url is empty");
@@ -494,6 +496,7 @@ export default {
             this.gameStarted = true;
 
             this.getUserPoints();
+            window.scrollTo(0, document.body.scrollHeight);
             //this.restartDigitalTwinContainer();   // restarts the digital twin docker container via the Flask
           } else {
             this.wrongUserID = true;

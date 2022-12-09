@@ -11,16 +11,16 @@ const Unit1IdentTasks = {
     blanks: [
         {
             level: 0,
-            responseActionID: "Step 1",
-            responseActionInstruction: 
-            `<span>&#62;</span><span>&#62;</span> Identify the source 
+            responseActionID: "Flag 1",
+            responseActionInstruction:
+                `<span>&#62;</span><span>&#62;</span> Identify the source 
 <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-top" 
 data-tooltip="Any type of computer in a network is a host.">
     <span class="has-text-link-dark has-text-weight-bold">
         host
     </span>
 </span> of the network scan.`,
-            flagInstruction: "Submit this host's IP address:",
+            flagInstruction: "Submit this host's IP address (Flag 1) on your flag submission board!",
             flagVariants: ["10.0.0.4", "10.0.04"],
             flag: "10.0.0.4",
             placeholder: "e.g., 10.0.0.10",
@@ -35,7 +35,7 @@ data-tooltip="Any type of computer in a network is a host.">
         },
         {
             level: 1,
-            responseActionID: "Step 2",
+            responseActionID: "Flag 2",
             responseActionInstruction: `<span>&#62;</span><span>&#62;</span> Identify the two 
 <span class="has-tooltip-arrow has-tooltip-multiline has-tooltip-top" 
 data-tooltip="An event type is defined by its unique 'plugin_sid' and its 'title'">
@@ -44,14 +44,14 @@ data-tooltip="An event type is defined by its unique 'plugin_sid' and its 'title
     </span>
 </span>
 that indicate the normal operation of the filling plant.`,
-            flagInstruction: "Submit the two plugin_sids, separated by a dash '-':",
+            flagInstruction: "Submit the two plugin_sids, separated by a dash '-' on your flag submission board (Flag 2)!",
             flagVariants: ["100-400", "400-100"],
             flag: "100-400",
             placeholder: "e.g., 500-700",
             hint: `In the search bar, enter the term 'successful' to view only events that indicate normal functioning.`,
 
             isTerminalTask: false,
-            
+
             triesLeft: 3,
             wrongTry: false,
             rightTry: false,
