@@ -14,13 +14,16 @@
         <form @submit.prevent="validateId()">
           <div class="field">
             <span>
-              <input class="input input-label-short is-size-6" :value="'Your ' + naming + ': '" />
+              <input
+                class="input input-label-short is-size-6"
+                :value="'Your ' + group_naming + ': '"
+              />
             </span>
             <span>
               <input
                 class="input input-short is-size-6 blank-input"
                 v-model.trim="userID"
-                :placeholder="namingPlaceholder"
+                :placeholder="group_namingPlaceholder"
               />
             </span>
           </div>
@@ -377,7 +380,7 @@ import Unit2RespTasks from "./data/Unit2RespTasks.js";
 import settings from "./Settings.js";
 
 import { userDashboard } from "@/firebase";
-import { VM_db } from "@/firebase";
+
 export default {
   name: "App",
 
@@ -444,7 +447,9 @@ export default {
       kibanaOn: true,
       urlPostQuiz: settings.urlPostQuiz,
       naming: settings.naming,
+      group_naming: settings.group_naming,
       namingPlaceholder: settings.namingPlaceholder,
+      group_namingPlaceholder: settings.group_namingPlaceholder,
       loginDisabled: settings.loginDisabled,
       kibanaUrl:
         window.location.href.replace("7080", "5605") +
@@ -607,19 +612,12 @@ export default {
               level: 0,
               points: 0,
             });
-            console.log(this.getVM());
           }
           this.getMarker();
         })
         .catch((error) => {
           console.log("Error getting document:", error);
         });
-    },
-
-    async getVM() {
-      const snapshot = await VM_db.limit(1).get();
-      console.log(snapshot.docs.map((doc) => doc.data()));
-      return JSON.stringify(snapshot.docs.map((doc) => doc.data().pseudonym)); //funktioniert so nicht
     },
 
     async getMarker() {
