@@ -502,7 +502,7 @@ export default {
 
             this.getUserPoints();
             window.scrollTo(0, document.body.scrollHeight);
-            //this.restartDigitalTwinContainer();   // restarts the digital twin docker container via the Flask
+            this.restartDigitalTwinContainer(); // restarts the digital twin docker container via the Flask
           } else {
             this.wrongUserID = true;
           }
