@@ -466,8 +466,8 @@ export default {
       this.gameStarted = true;
     } else if (this.url_param != null) {
       this.userID = this.url_param;
-      //var newUrl = this.removeURLParameter(location.href, "userID");
-      //history.pushState({}, null, newUrl);
+      var newUrl = this.removeURLParameter(location.href, "userID");
+      history.pushState({}, null, newUrl);
       this.validateId();
     } else {
       console.log("url is empty");
