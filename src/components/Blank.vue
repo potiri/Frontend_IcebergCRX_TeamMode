@@ -23,14 +23,14 @@
                 </div>
               </div>
 
-              <div class="buttons is-left mt-5">
+              <!--div class="buttons is-left mt-5">
                 <button
                   class="button is-rounded is-warning has-tooltip-arrow has-tooltip-multiline has-tooltip-top"
                   v-if="!hintActivated && this.blank.hint != null"
                   :data-tooltip="'Buy hint for -1 Point'"
                   @click="buyHint"
                 >Need a hint?</button>
-              </div>
+              </div-->
             </div>
           </div>
         </div>
