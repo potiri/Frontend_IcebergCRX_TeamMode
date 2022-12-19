@@ -499,10 +499,8 @@ export default {
           if (doc.exists) {
             this.emptyInput = false;
             this.gameStarted = true;
-
             this.getUserPoints();
             window.scrollTo(0, document.body.scrollHeight);
-            this.restartDigitalTwinContainer(); // restarts the digital twin docker container via the Flask
           } else {
             this.wrongUserID = true;
           }
@@ -572,6 +570,7 @@ export default {
               this.startTime = doc.data().startTime;
               this.userPseudonym = doc.data().pseudonym;
               this.level = doc.data().level;
+              // restarts the digital twin docker container via the Flask
               console.log(this.mitmRunning);
               if (this.level > 4) {
                 this.playbookTwoBegin = true;
@@ -582,6 +581,7 @@ export default {
             } else {
               //registered player who didn't log in before
               console.log(doc.data().startTime);
+              this.restartDigitalTwinContainer();
               this.level = 0;
               this.startTime = new Date();
               this.userPseudonym = doc.data().pseudonym;
